@@ -3,11 +3,9 @@ public class Main {
     public static void main(String[] args) {
         sayiBulmaca();
         sayiBulmaca();
-        sayiBulmaca();
-        sayiBulmaca();
     }
 
-    //camel casing
+    //camel casing - Pascal Casing
     public static void sayiBulmaca() {
         int[] sayilar = new int[]{1, 2, 5, 7, 9, 0};
         int aranacak = 6;
@@ -20,7 +18,7 @@ public class Main {
             }
         }
 
-        String mesaj = "";
+        String mesaj;
         if (varMi) {
             mesaj = "Sayı mevcuttur: " + aranacak;
             mesajVer(mesaj);
