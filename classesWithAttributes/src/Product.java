@@ -26,7 +26,7 @@ public class Product {
     public int getId() {
         return id;
     }
-
+    // this içinde bulunduğun class demek.
     //setter
     public void setId(int id) {
         this.id = id;
