@@ -1,6 +1,9 @@
 import java.sql.Date;
 		import java.text.SimpleDateFormat;
-		import java.util.Calendar;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.Calendar;
 
 		public class Main {
 
@@ -19,8 +22,17 @@ import java.sql.Date;
 				
 				String date = dateFormat.format(utilDate); 
 				
-				System.out.println(date);
+//				
 				
+				LocalDate lDate ; // LocalDate.now(); // varsayılan ttarihi oluşturma
+//				lDate = LocalDate.of(2023,01,28);		// Custom date oluşturma
+//				lDate = LocalDate.parse("2023-01-29");
+				lDate = LocalDate.now(ZoneId.systemDefault());
+				
+				LocalDateTime lDateTime = LocalDateTime.now();
+				
+				
+				System.out.println(lDateTime);
 
 			}
 
