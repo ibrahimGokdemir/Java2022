@@ -2,6 +2,7 @@ import java.sql.Date;
 		import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.ZoneId;
 import java.util.Calendar;
 
@@ -29,13 +30,35 @@ import java.util.Calendar;
 //				lDate = LocalDate.parse("2023-01-29");
 				lDate = LocalDate.now(ZoneId.systemDefault());
 				
-				LocalDateTime lDateTime = LocalDateTime.now();
+				LocalDateTime lDateTime = LocalDateTime.now(); //Ustteki medotlar burada da geçerli
 				
+//				System.out.println(lDateTime); //Cikti --> 2023-01-27T17:21:20.612221
 				
-				System.out.println(lDateTime);
+				LocalTime time = LocalTime.now();
+				
+				time = LocalTime.MIDNIGHT; //00:00
+				time = LocalTime.NOON;		//12:00
+//				System.out.println(time);
+				
+				LocalDate yarin = LocalDate.now().plusDays(1);
+				System.out.println(yarin);
+				
 
 			}
 
 		}
 
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
