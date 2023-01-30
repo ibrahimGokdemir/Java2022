@@ -1,5 +1,5 @@
 import java.sql.Date;
-		import java.text.SimpleDateFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -40,9 +40,33 @@ import java.util.Calendar;
 				time = LocalTime.NOON;		//12:00
 //				System.out.println(time);
 				
-				LocalDate yarin = LocalDate.now().plusDays(1);
-				System.out.println(yarin);
+				LocalDate yarin = LocalDate.now().plusDays(1); //1 gun sonra
+//				System.out.println(LocalDate.now().withMonth(6));
+
 				
+				
+				/*
+				 * LocalDate.now();
+				 * LocalDate y = LocalDate.now().minusDays(1);
+				 * LocalDate t = LocalDate.now().plusDays(1);
+				 * LocalDate t = LocalDate.of(2023, 1, 29, 23, 19, 0, 0);
+				 * LocalDate.now().withMonth(6);
+				 * LocalTime.of(13, 12, 11) 13:12:11
+				 *LocalTime.MIDNIGHT 00:00
+				 *LocalTime.NOON 12:00
+				 *LocalTime.now() Current time from system clock
+				 *LocalTime.MAX The maximum supported local time 23:59:59.999999999
+				 *LocalTime.MIN The minimum supported local time 00:00
+				 *LocalTime.ofSecondOfDay(84399) 23:59:59 , Obtains Time from second-of-day value
+				 *LocalTime.ofNanoOfDay(2000000000) 00:00:02 , Obtains Time from nanos-of-day value
+				 * 
+				 * 
+				 * 
+				 * 
+				 * 
+				 * 
+				 * 
+				 */
 
 			}
 
