@@ -4,7 +4,10 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
+import java.util.List;
 
 		public class Main {
 
@@ -68,6 +71,17 @@ import java.util.Calendar;
 				 * 
 				 */
 
+				
+				
+				List test = new ArrayList();
+			ArrayList<String> test2;
+			
+			String[] stringArray = {"foo", "bar", "baz"};
+			List<String> stringList = Arrays.asList(stringArray);
+
+			
+			
+			
 			}
 
 		}
