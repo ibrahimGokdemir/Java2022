@@ -1,12 +1,11 @@
 package kodlama.io.rentACar.business.abstracts;
 
+import java.util.List;
+
 import kodlama.io.rentACar.business.requests.CreateBrandRequest;
 import kodlama.io.rentACar.business.requests.UpdateBrandRequest;
 import kodlama.io.rentACar.business.responses.GetAllBrandsResponse;
 import kodlama.io.rentACar.business.responses.GetByIdBrandResponse;
-import kodlama.io.rentACar.entities.concretes.Brand;
-
-import java.util.List;
 
 public interface BrandService {
     List<GetAllBrandsResponse> getAll();

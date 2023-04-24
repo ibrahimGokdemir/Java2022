@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 @Table(name = "brands")
@@ -20,6 +22,9 @@ public class Brand {
 
     @Column(name = "name")
     private String name;
+    
+    @OneToMany(mappedBy = "brand")
+    private List<Model> models;
 
 }
 
